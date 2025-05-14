@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h2>
-        Helo, World!
-    </h2>
+<body style="margin-top: 20%;
+            align-items: center;
+            justify-items: center;">
 
+    <h2 id="titulo" style="background: blue; 
+    color: white;
+    align-items: center;">
+        WELLINGTON JORGE OLIVEIRA
+    </h2>
+    <script>
+  const titulo = document.getElementById("titulo");
+
+  titulo.addEventListener("mouseenter", function () {
+    titulo.style.background = "green"; // Cor ao passar o mouse
+  });
+
+  titulo.addEventListener("mouseleave", function () {
+    titulo.style.background = "blue"; // Cor ao sair o mouse
+  });
+</script>
 </body>
 </html>
